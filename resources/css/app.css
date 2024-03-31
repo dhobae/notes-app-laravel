@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tailwind Override Trixx Editor*/
+trix-editor {
+    width: 100%;
+}
+
+trix-editor h1 {
+    font-size: 1.25rem !important;
+    line-height: 1.25rem !important;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+trix-editor a:not(.no-underline) {
+    text-decoration: underline;
+}
+
+trix-editor a:visited {
+    color: green;
+}
+
+trix-editor ul {
+    list-style-type: disc;
+    padding-left: 1rem;
+}
+
+trix-editor ol {
+    list-style-type: decimal;
+    padding-left: 1rem;
+}
+
+trix-editor pre {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    font-family: monospace;
+    font-size: 1.5em;
+    padding: 0.5em;
+    white-space: pre;
+    background-color: #eee;
+    overflow-x: auto;
+}
+
+trix-editor blockquote {
+    border: 0 solid #ccc;
+    border-left-width: 0px;
+    border-left-width: 0.3em;
+    margin-left: 0.3em;
+    padding-left: 0.6em;
+}
+
+.trix-button-group.trix-button-group--file-tools {
+    display: none;
+}
+
+/* List */
+/* Reset style Trix yang ditimpa Tailwind */
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+}
+ul {
+    list-style-type: disc;
+}
+li::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
+
+ul ol {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+[x-cloak] {
+    display: none !important;
+}
